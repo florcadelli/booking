@@ -7,7 +7,7 @@ header{
   top: 0px;
   z-index:999;
   background-color: #FFFFFF;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   
 }
 
@@ -15,7 +15,7 @@ header .company a{
   display: flex;
   /* border: 1px solid red; */
   align-items: end;
-  padding: 5px 0px 23px 32px;
+  padding: 12px 0px 23px 32px;
 }
 
 header .company a .slogan{
@@ -29,18 +29,23 @@ header .company a .slogan{
 
 header .user_entry{
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  padding-right: 40px;
-  /* border: 1px solid red; */
+  padding-right: 20px;
+  border: 1px solid red;
+  width: 35%;
 }
 
 header .user_entry a{
-  padding: 10px 56.5px; 
+  width:47%;
+  padding: 10px; 
+  text-align: center;
   border: 1px solid var(--colorPrincipal);
   color: var(--colorPrincipal);
   border-radius: 5px;
   /* margin: 5px; */
-  /* border: 1px solid red; */
+  border: 1px solid red;
+
 }
 
 header .user_data{
@@ -48,6 +53,7 @@ header .user_data{
   align-items: center;
   justify-content: space-around;
   width: 15%;
+  border: 1px solid red;
 }
 
 header .user_data .avatar{
@@ -83,4 +89,50 @@ header .user_data .logout{
   
 }
 
+.kangrebur{
+  display:none;
+}
+@media screen and ( max-width: 768px){
+  body{
+      background-color: red;
+   } 
+  .slogan{
+    display:none;
+  }  
+  /* header .user_entry{
+    width: 50%;
+  } */
+  /* header .user_data{
+ 
+    width: 30%;
+    border: 1px solid red;
+  }   */
+  header .company a{
+    padding: 25px 0px 23px 32px;
+  }   
+}
+
+@media (max-width: 480px) {
+  body{
+    background-color: green;
+  }
+  header .user_entry{
+     display: none;
+  }
+  header .user_data{
+    display: none;
+  } 
+  .menu{
+    border:1px solid green;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+ }
+  .kangrebur{
+    display:block;
+    font-size: 25px; 
+
+  }
+}
 
