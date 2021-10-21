@@ -1,0 +1,86 @@
+
+header{
+
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index:999;
+  background-color: #FFFFFF;
+  /* border: 1px solid red; */
+  
+}
+
+header .company a{
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: end;
+  padding: 5px 0px 23px 32px;
+}
+
+header .company a .slogan{
+  padding: 12px;
+  font-size: var(--size20);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color3);
+  /* border: 1px solid red; */
+}
+
+header .user_entry{
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  /* border: 1px solid red; */
+}
+
+header .user_entry a{
+  padding: 10px 56.5px; 
+  border: 1px solid var(--colorPrincipal);
+  color: var(--colorPrincipal);
+  border-radius: 5px;
+  /* margin: 5px; */
+  /* border: 1px solid red; */
+}
+
+header .user_data{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 15%;
+}
+
+header .user_data .avatar{
+  border-radius: 50%;
+  background-color: var(--color2);
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: var(--size20);
+  font-weight: 700;
+}
+
+header .user_data .hi_username{
+  font-size: var(--size16);
+  font-weight: 700;
+}
+
+header .user_data .hello{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+header .user_data .username{
+  color: var(--colorPrincipal);
+}
+
+
+header .user_data .logout{
+  position:relative;
+  right:20px;
+  bottom: 20px;
+  font-size: 22px;
+  color: var(--color2);
+  font-weight: 700;
+  
+}
+
+

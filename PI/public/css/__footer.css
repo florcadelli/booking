@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    /* z-index: 999; */
+    background-color: var(--colorPrincipal);
+    width: 100vw;
+    color: #FFFFFF;
+}
+
+footer .copyright{
+
+    padding: 19px 50px 23px 50px;
+}
+
+footer .social_networks{
+
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: var(--size24);
+    padding-right: 30px;
+}
