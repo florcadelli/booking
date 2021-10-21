@@ -8,10 +8,10 @@ select {
 }
 
 
-option::before {
+/* option::before {
     content: "\f3c5";
     font-family: "Font Awesome 5 Free";
-}
+} */
 
 main .searcher{
     background-color: var(--color2);
