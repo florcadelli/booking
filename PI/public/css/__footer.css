@@ -8,11 +8,14 @@ footer{
     background-color: var(--colorPrincipal);
     width: 100vw;
     color: #FFFFFF;
+    
 }
 
 footer .copyright{
 
     padding: 19px 50px 23px 50px;
+    font-size: var(--size14);
+    font-weight: 700;
 }
 
 footer .social_networks{
@@ -22,5 +25,27 @@ footer .social_networks{
     justify-content: space-around;
     align-items: center;
     font-size: var(--size24);
-    padding-right: 30px;
+    padding-right: 15px;
+}
+
+@media screen and ( max-width: 768px){
+    footer .social_networks{
+        width: 30%;
+       
+    }
+
+    footer .copyright{
+
+        padding-left:30px;
+        
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+
+    footer .social_networks{
+     display: none;   
+    }
 }

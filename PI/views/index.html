@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../public/css/style.css" />
-    <title>Digital Booking</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../public/css/style.css" />
+  <script defer src="../public/js/header.js"></script>
+  <title>Digital Booking</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+
       <div class="company">
         <a href="/">
           <div class="logo">
@@ -23,56 +26,116 @@
           <h4 class="slogan">Sentite como en tu hogar</h4>
         </a>
       </div>
+
       <div class="menu"><i class="fas fa-bars kangrebur"></i></div>
 
-      <!-- <div class="user_entry">
+      <div class="user_entry">
         <a href="#">Crear cuenta</a>
         <a href="#">Iniciar sesión</a>
-      </div> -->
+      </div>
 
-      <div class="user_data">
+      <!-- <div class="user_data">
 
-            <div class="avatar">
-                <p>BR</p>
-            </div>
-            <div class="hi_username">
-            <p class="hello">Hola,</p>
-            <p class="username">Bruno Rodríguez</p>
-            </div>
-            
-            <a class="logout" href="cierreSesion">X</a>
+        <div class="avatar">
+          <p>BR</p>
+        </div>
+        <div class="hi_username">
+          <p class="hello">Hola,</p>
+          <p class="username">Bruno Rodríguez</p>
         </div>
 
-        
-    </header>
-    <main>
-      <section class="searcher">
-        <h1>Busca ofertas en hoteles, casas y mucho más</h1>
+        <a class="logout" href="cierreSesion">X</a>
+      </div> -->
 
-        <form action="#" method="POST">
-          <select class="form-control fa reserve">
-            <option class="fa">&#xf3c5; Ubicacion ciudades</option>
-          </select>
+      <div class="hamburguer_menu">
+        <!--Menu desplegable en mobile-->
 
-          <!-- &#xf3c5; -->
+        <div class="dropdown_desktop">
+          <!-- <div class="close_menu"><i class="fa fa-times"></i></div> -->
+          <div class="close_menu" href="cierreSesion">X</div>
+          <!-- <h3>MENÚ</h3> -->
 
-          <input type="datetime-local" class="reserve" />
-          <input class="search" type="submit" value="Buscar" />
-        </form>
-      </section>
-    </main>
+          <div class="dropdown_login">
+            <div class="avatar">
+              <p>BR</p>
+            </div>
+            <div class="hi_username">
+              <p class="hello">Hola,</p>
+              <p class="username">Bruno Rodríguez</p>
+            </div>
+            <!-- <a class="logout" href="cierreSesion">X</a> -->
+          </div>
 
-    <footer>
-      <div class="copyright">
-        <p>©2021 Digital Booking</p>
+        </div>
+
+
+
+        <div class="entry_icons">
+          <!--   <div class="entry">
+            <a href="#">Crear cuenta</a> 
+            <div class="line"></div>
+            <a href="#">Iniciar sesión</a>
+          </div> -->
+
+          <div class="nav_login">
+
+            <div class="space"></div>
+
+            <div class="nav_footer">
+
+              <h5 class="close_option">¿Deseas <span>cerrar sesión</span>? </h5>
+              <div class="line2"></div>
+
+            </div>
+
+          </div>
+
+          <span class="nav_social_networks">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </span>
+
+        </div>
+
+
+
       </div>
 
-      <div class="social_networks">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
-    </footer>
-  </body>
+    </nav>
+
+  </header>
+  <main>
+    <section class="searcher">
+      <h1>Busca ofertas en hoteles, casas y mucho más</h1>
+
+      <form action="#" method="POST">
+        <select class="form-control fa reserve">
+          <option class="fa">&#xf3c5; Ubicacion ciudades</option>
+        </select>
+
+        <!-- &#xf3c5; -->
+
+        <input type="datetime-local" class="reserve" />
+        <input class="search" type="submit" value="Buscar" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copyright">
+      <p>©2021 Digital Booking</p>
+    </div>
+
+    <div class="social_networks">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+
+  </footer>
+</body>
+
 </html>

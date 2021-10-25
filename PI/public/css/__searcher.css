@@ -14,11 +14,12 @@ select {
 } */
 
 main .searcher{
-    background-color: var(--color2);
+    background-color: var(--color3);
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 145px;
 
 }
 
@@ -32,16 +33,17 @@ main .searcher form{
     display: flex;
     justify-content: space-around;
     width: 80%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     padding-bottom: 26px;
     
 }
 
 main .searcher form .reserve{
     width: 40%;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     padding: 12px 8px;
     border-radius: 5px;
+    background-color: #FFFFFF;
     color:#7F7F7F;
     font-weight: 500;
     font-size: var(--size14);
@@ -50,7 +52,7 @@ main .searcher form .reserve{
 
 main .searcher form .search{
     width: 15%;
-    border: solid red 1px;
+    border: solid var(--colorPrincipal) 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,4 +61,83 @@ main .searcher form .search{
     font-size: var(--size16);
     font-weight: 700;
     border-radius: 5px;
+}
+
+@media screen and ( max-width: 768px){
+
+    main .searcher{
+        height: 139px;
+    }
+    main .searcher h1{
+        padding: 16px 0px 20px 0px; 
+        font-size: 30px;
+    
+    }
+
+    main .searcher form{
+        width: 95%;  
+        padding-bottom: 0px;
+        height: 30%;
+        /* border: solid red 1px;    */
+    }
+    
+    main .searcher form .reserve{
+        width: 34%;
+       /*  border: solid red 1px;
+        padding: 12px 8px;
+        border-radius: 5px;
+        color:#7F7F7F;
+        font-weight: 500;
+        font-size: var(--size14); */
+    
+    }
+    
+    main .searcher form .search{
+        width: 23%;
+        padding: 12px 0px 5px 0px;
+      /*   border: solid red 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--colorPrincipal);
+        color: #FFFFFF;
+        font-size: var(--size16);
+        font-weight: 700;
+        border-radius: 5px;
+     */
+    }
+
+    @media (max-width: 480px) {
+
+        main .searcher{
+            height: 20em;
+            
+        }
+
+        main .searcher h1{
+            text-align: center;
+            /* border: red solid 1px; */
+            margin: 10px 10px 0px 10px; 
+            
+        }
+
+        main .searcher form{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            /* border: solid red 1px; */
+            height: 11em;
+            
+
+            /* border: solid red 1px;    */
+        }
+
+        main .searcher form .reserve{
+            width: 100%;
+        }
+
+        main .searcher form .search{
+            width: 100%;
+        }
+    }
 }
