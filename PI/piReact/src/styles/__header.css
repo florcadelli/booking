@@ -60,8 +60,8 @@ header .user_data{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
-  border: 1px solid red;
+  width: 45%;
+  /* border: 1px solid red; */
 }
 
 header .user_data .avatar{
@@ -103,13 +103,13 @@ nav .hamburguer_menu{
 
 .menu{
   display: none;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 .kangrebur{
   display:none;
 }
 @media screen and ( max-width: 768px){
-  nav{
+  header{
     height: 98px;
   }
   body{
@@ -118,26 +118,23 @@ nav .hamburguer_menu{
   .slogan{
     display:none;
   }  
-  /* header .user_entry{
-    width: 50%;
-  } */
-  /* header .user_data{
- 
-    width: 30%;
-    border: 1px solid red;
-  }   */
+  
+  header .user_data{
+    width: 80%;
+    /* border: 1px solid red; */
+  }  
 
   header .company a{
     padding: 25px 0px 23px 32px;
   }   
 
-  header .user_entry{
+  /* header .user_entry{
     width: 50%;
   }
   header .user_entry a{
     padding: 11px 20px 10px 22px;
     margin: 38px 5px 20px 0px;
-  }
+  } */
 
   
 }
@@ -153,7 +150,7 @@ nav .hamburguer_menu{
     display: none;
   } 
   .menu{
-    border:1px solid green;
+    /* border:1px solid green; */
     display:flex;
     justify-content: center;
     align-items: center;
