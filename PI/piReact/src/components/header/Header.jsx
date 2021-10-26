@@ -4,8 +4,7 @@ import Company from "./Company";
 
 const Header = ({props}) => {
 return (
-    <header>
-      
+    <header>  
       <Company/>
       <Nav/>
   </header>
