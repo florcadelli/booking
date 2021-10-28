@@ -1,11 +1,12 @@
 import React from 'react'
 import Searcher from "./Searcher";
 
+
+
 const Main = ({props}) => {
 return (
-    <main>
-      <Searcher/>
-    
+  <main>
+      <Searcher/>  
   </main>
 )
 }

@@ -38,6 +38,7 @@ main .searcher form{
     
 }
 
+
 main .searcher form .reserve{
     width: 40%;
     /* border: solid red 1px; */
@@ -47,8 +48,39 @@ main .searcher form .reserve{
     color:#7F7F7F;
     font-weight: 500;
     font-size: var(--size14);
+    line-height: 16px;
 
 }
+
+main .searcher form .reserve .reserve_date{
+   border: none;
+   color:#7F7F7F;
+   font-size: var(--size14);
+   font-weight: 500;
+}
+
+
+
+
+
+.datePicker .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    border-radius: 0.3rem;
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    border-radius: 50%;
+}  
+
+/* .ui-datepicker-calendar td:first-child .ui-state-active{
+    background: orange;
+} */
+
+
+/* .ui-datepicker .ui-state-default
+{
+background: orange;
+} */
+
+
 
 main .searcher form .search{
     width: 15%;

@@ -18,16 +18,16 @@ class Nav extends Component {
     this.setState({ open: false });
   };
   render() {
-    let open;
+    let visible;
     if (this.state.open) {
-      open = <HamburguerMenu  fn={this.HandlerClickX} />;
+      visible = <HamburguerMenu  fn={this.HandlerClickX} />;
     }
     return (
       <nav>
         <MobileMenu fn={this.HandlerClickMenu} />
         {/* <UserEntry/> */}
         <UserData />
-        {open}
+        {visible}
       </nav>
     );
   }

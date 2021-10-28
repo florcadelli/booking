@@ -112,9 +112,9 @@ nav .hamburguer_menu{
   header{
     height: 98px;
   }
-  body{
+  /* body{
       background-color: red;
-   } 
+   }  */
   .slogan{
     display:none;
   }  
@@ -140,9 +140,9 @@ nav .hamburguer_menu{
 }
 
 @media (max-width: 480px) {
-  body{
+ /*  body{
     background-color: green;
-  }
+  } */
   header .user_entry{
      display: none;
   }

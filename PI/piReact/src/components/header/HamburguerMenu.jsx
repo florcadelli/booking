@@ -13,11 +13,11 @@ const HamburguerMenu = ({ fn }) => {
 
         <div class="dropdown_login">
           <div class="avatar">
-            <p>BR</p>
+            <p>DT</p>
           </div>
           <div class="hi_username">
             <p class="hello">Hola,</p>
-            <p class="username">Bruno Rodríguez</p>
+            <p class="username">Diego Testa</p>
           </div>
           {/* <a class="logout" href="cierreSesion">X</a>  */}
         </div>
