@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UserData from "./UserData";
+import UserEntry from "./UserEntry";
 import HamburguerMenu from "./HamburguerMenu";
 
 import MobileMenu from "./MobileMenu";
@@ -25,8 +26,8 @@ class Nav extends Component {
     return (
       <nav>
         <MobileMenu fn={this.HandlerClickMenu} />
-        {/* <UserEntry/> */}
-        <UserData />
+        <UserEntry/>
+        {/* <UserData /> */}
         {visible}
       </nav>
     );

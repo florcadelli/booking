@@ -5,10 +5,10 @@ const HamburguerMenu = ({ fn }) => {
   return (
     <div class="hamburguer_menu hamburguer_menu_visible">
       <div class="dropdown_desktop">
-        {/* <div class="close_menu"><i class="fa fa-times"></i></div>  */}
         <div class="close_menu" href="cierreSesion" onClick={fn}>
           X
         </div>
+
         {/* <h3>MENÚ</h3> */}
 
         <div class="dropdown_login">
@@ -19,8 +19,8 @@ const HamburguerMenu = ({ fn }) => {
             <p class="hello">Hola,</p>
             <p class="username">Diego Testa</p>
           </div>
-          {/* <a class="logout" href="cierreSesion">X</a>  */}
         </div>
+        
       </div>
       <div class="entry_icons">
         {/* <div class="entry">
