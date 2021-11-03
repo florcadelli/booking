@@ -1,20 +1,27 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --primary: #1DBEB4;
-    --secondary: #F3F1ED;
-  }
+    --colorPrincipal:#FBC02D;
+    --color2:#263238;
+    --color3:#607D8B;
+    --color4:#FFFBE2;
+    --size12: 12px;
+    --size14: 14px;
+    --size16: 16px;
+    --size20: 20px;
+    --size24: 24px;
+    }
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   body {
-    background-color: #C4C4C4;
+    background-color: var(--color4);
     min-height: 100vh;
   }   
    
@@ -30,7 +37,7 @@
   }
 
   .title-form {
-    color: var(--primary);
+    color: var(--colorPrincipal);
     padding-bottom: .8em;
 }
 
@@ -38,7 +45,7 @@
     width: 100%;
     padding: .4em .5em;
     background-color: var(--secondary);
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--color3);
     border-radius: .2em;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12));
     margin: .5em 0;
@@ -82,13 +89,13 @@
 }
 
 .form-button {
-    background-color: var(--primary);
+    background-color: var(--colorPrincipal);
     color: white;
     font-size: 1em;
     width: 206px;
     height: 40px;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12));
-    border: 1px solid var(--primary);
+    border: 1px solid var(--colorPrincipal);
     border-radius: .2em;
     margin: 1em 0;
     cursor: pointer;

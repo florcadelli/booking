@@ -1,12 +1,13 @@
 package com.dh.Grupo4.trabajoIntegrador.service;
 
 import com.dh.Grupo4.trabajoIntegrador.model.Category;
+import com.dh.Grupo4.trabajoIntegrador.model.CategoryDTO;
 import com.dh.Grupo4.trabajoIntegrador.repository.ICategoryRepository;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class CategoryService implements ICategoryService {
@@ -14,23 +15,31 @@ public class CategoryService implements ICategoryService {
     @Autowired
     ICategoryRepository categoryRepository;
 
-    //mapper?
+    @Autowired
+    ObjectMapper mapper;
 
-    public Category createCategory(Category category){
+    public void createCategory(CategoryDTO categoryDTO){
 
-        return categoryRepository.save(category);
-
-    }
-
-    public Optional<Category> readCategory (Long id){
-
-        return categoryRepository.findById(id);
+        Category category = mapper.convertValue(categoryDTO, Category.class);
+        categoryRepository.save(category);
 
     }
 
-    public Category updateCategory (Category category){
+    public CategoryDTO readCategory (Long id){
 
-        return categoryRepository.save(category);
+        CategoryDTO categoryDTO = null;
+        Optional<Category> category = categoryRepository.findById(id);
+        if(category.isPresent()){
+            categoryDTO = mapper.convertValue(category, CategoryDTO.class);
+        }
+        return categoryDTO;
+
+    }
+
+    public void updateCategory (CategoryDTO categoryDTO){
+
+        Category category = mapper.convertValue(categoryDTO,Category.class);
+        categoryRepository.save(category);
 
     }
 
@@ -40,9 +49,25 @@ public class CategoryService implements ICategoryService {
 
     }
 
-    public Collection<Category> readCategories (){
+    public Collection<CategoryDTO> readCategories (){
 
-        return categoryRepository.findAll();
+        List<Category> categories = categoryRepository.findAll();
+        Set<CategoryDTO> categoriesDTO = new HashSet<>();
+
+        for(Category category : categories){
+
+            CategoryDTO categoryDTO = new CategoryDTO();
+
+            categoryDTO.setId(category.getId());
+            categoryDTO.setTitle(category.getTitle());
+            categoryDTO.setDescription(category.getDescription());
+            categoryDTO.setUrlimg(category.getUrlimg());
+
+            categoriesDTO.add(categoryDTO);
+
+        }
+
+        return categoriesDTO;
 
     }
 

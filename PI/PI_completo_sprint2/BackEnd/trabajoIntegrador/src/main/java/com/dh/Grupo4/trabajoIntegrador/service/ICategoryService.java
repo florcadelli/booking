@@ -1,20 +1,21 @@
 package com.dh.Grupo4.trabajoIntegrador.service;
 
 import com.dh.Grupo4.trabajoIntegrador.model.Category;
+import com.dh.Grupo4.trabajoIntegrador.model.CategoryDTO;
 
 import java.util.Collection;
 import java.util.Optional;
 
 public interface ICategoryService {
 
-    public Category createCategory(Category category);
+    public void createCategory(CategoryDTO categoryDTO);
 
-    public Optional<Category> readCategory (Long id);
+    public CategoryDTO readCategory (Long id);
 
-    public Category updateCategory (Category category);
+    public void updateCategory (CategoryDTO categoryDTO);
 
     public void deleteCategory (Long id);
 
-    public Collection<Category> readCategories ();
+    public Collection<CategoryDTO> readCategories ();
 
 }

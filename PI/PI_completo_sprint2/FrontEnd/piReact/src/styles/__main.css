@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
-:root {
-    --primary: #1DBEB4;
-    --secondary: #F3F1ED;
-}
+
 
   * {
     margin: 0;
@@ -15,7 +12,7 @@
 body {
     background-color: #fff;
     min-height: 100vh;
-    color: #383B58;
+    color: var(--color2);
 } 
 
 .titleRecom{
@@ -76,7 +73,7 @@ h5{
 }
 
 .card p{
-    color: #545776;
+    color: var( --color3);
 }
 
 .card:hover{    
@@ -87,7 +84,7 @@ h5{
 /**** Recomendaciones ****/
 
 .recom{
-    background-color: #EBEBEE;   
+    background-color: var(--color4);   
     padding: 20px;
     width: 100%;
     margin-bottom: 60px;
@@ -160,7 +157,7 @@ h5{
     margin-bottom: 10px;
 }
 .btnRanking{
-    background-color: #383B58;
+    background-color: var(--color2);
     color: white;
     padding: 5px;
     margin:0px 20px;
@@ -172,7 +169,7 @@ h5{
 }
 
 .btnVerMas{
-    background-color: #1DBEB4;
+    background-color: var(--colorPrincipal);
     color: white;
     
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
@@ -229,7 +226,7 @@ h3{
 }
 @media (max-width: 768px){
 .recom{
-color: #383B58; 
+color: var(--color2); 
 }
     
 .cardsContainer{
@@ -269,7 +266,7 @@ color: #383B58;
 /********** Responsive 480px mobile **********/
 @media (max-width: 480px){
     .recom {
-        background-color: #383B58;
+        background-color: var(--color2);
         
     }
     h2{
