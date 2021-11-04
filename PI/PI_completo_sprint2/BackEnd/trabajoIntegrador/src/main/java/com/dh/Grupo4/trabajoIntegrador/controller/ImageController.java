@@ -30,4 +30,10 @@ public class ImageController {
     public Collection<ImageDTO> getImages(@PathVariable String title){
         return iImageService.getHousingByTitle(title);
     }
+
+    @GetMapping("{title}")
+    public ImageDTO getMainImage(@PathVariable String title){
+        return  iImageService.getMainHousingByTitle(title);
+    }
+
 }

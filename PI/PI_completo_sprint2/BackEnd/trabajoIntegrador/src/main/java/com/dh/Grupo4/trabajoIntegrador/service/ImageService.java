@@ -20,15 +20,6 @@ public class ImageService implements IImageService {
     @Autowired
     ObjectMapper mapper;
 
-   /* @Autowired
-    ModelMapper modelMapper;*/
-
-
-    /*@Override
-    public ImageDTO readImage(Long id) {
-        Optional<Image> found = imageRepository.findById(id);
-        return mapper.convertValue(found, ImageDTO.class);
-    }*/
 
     //Método para probar Postman (no es un método obligatorio)
     @Override
@@ -37,16 +28,6 @@ public class ImageService implements IImageService {
         imageRepository.save(image);
     };
 
-    /*@Override
-    public Collection<ImageDTO> readImages() {
-        return null;
-    }*/
-
-
-   /* public Collection<ImageDTO> getHousingByTitle(String title){
-        Collection<Image> images = imageRepository.findHousingByTitle(title);
-        return mapper.convertValue(images, ImageDTO.class);
-    }*/
 
     @Override
     public Collection<ImageDTO> getHousingByTitle(String title){
@@ -59,20 +40,11 @@ public class ImageService implements IImageService {
     }
 
 
-//    public Collection<FeatureDTO> readFeatures() {
-//        List<Feature> features = featureRepository.findAll();
-//        Set<FeatureDTO> featureDTOS =new HashSet<>();
-//        for (Feature feature: features) {
-//            featureDTOS.add(mapper.convertValue(feature,FeatureDTO.class));
-//        }
-//        return featureDTOS;
-//    }
-
-  /*  @Override
+    @Override
     public ImageDTO getMainHousingByTitle(String title){
         Image found = imageRepository.findMainHousingByTitle(title);
         return mapper.convertValue(found, ImageDTO.class);
-    }*/
+    }
 
 
 
