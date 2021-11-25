@@ -1,0 +1,72 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    
+}
+
+:root {
+    --color3:#607D8B;
+    --color4:#FFFBE2;
+    --size24: 24px;
+} */
+
+/* @import url("../__general.css"); */
+
+/************Mobile**************/
+
+#container_header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--color3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+
+#container_header>div {
+    width: 30vw;
+}
+
+#h2_header {
+    font-size: 25px;
+    color: var(--color4);
+}
+
+#h3_header {
+    color: #FFFBE2;
+    font-weight: lighter;
+    font-size: var(--size14);
+}
+
+#arrow {
+    color: var(--color4);
+    text-decoration: none;
+    /* font-size: var(--size24); */
+    font-size: 30px;
+}
+
+.button_navigate{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/************Tablet & Desktop**************/
+
+@media (min-width: 768px) {
+
+    #container_header {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+}

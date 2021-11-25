@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product_dates_style.module.css">
+    <title>Fechas</title>
+</head>
+<body>
+    
+    <!-- Calendario en componente de React
+
+    import subDays from "date-fns/subDays";
+    import { addDays } from 'date-fns';
+    import { useState } from 'react'
+    import DatePicker, {registerLocale} from "react-datepicker";
+    import "react-datepicker/dist/react-datepicker.css";
+    import es from 'date-fns/locale/es';
+    registerLocale("es", es);
+
+        const [dateRange, setDateRange] = useState([null, null]);
+        const [startDate, endDate] = dateRange;
+        
+      <DatePicker
+          wrapperClassName="datePicker"
+          dateFormat="d 'de' MMM."
+          className= "fa reserve_date"
+          monthsShown={2}
+          inline
+          selectsRange={true}
+          startDate={startDate}
+          endDate={endDate}
+          onChange={(update) => {
+            setDateRange(update);
+          }}
+          monthsShown={2}
+          locale= "es"
+          minDate={subDays(new Date(), 0)}
+          maxDate={addDays(new Date(), 30)}
+        />
+    -->
+
+    <div id="container_dates">
+        <h2 id="h2_dates">Fechas disponibles</h2>
+        <div id="container_dates_icons">
+            <div class="calendar">
+                <p>Calendario Falso</p> <!--Se reemplaza por el componente de React arriba comentado-->
+            </div>
+            <div id="container_dates_info">
+                <h4 id="h4_dates">Agregá tus fechas de viaje para obtener precios exactos</h4>
+                <input class="input_dates" type="button" value="Iniciar reserva">
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

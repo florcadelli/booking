@@ -1,0 +1,58 @@
+[
+  {
+    "img": "https://cdn.pixabay.com/photo/2018/04/15/18/14/holiday-house-3322326_960_720.jpg",
+    "category": "Casas",
+    "title": "Casa de playa",
+    "location": "Puerto Madryn",
+    "description": "Devonshire rex. Bombay manx russian blue but british shorthair and siamese american shorthair lynx. Tomcat siamese yet russian blue and sphynx yet mouser tomcat."
+  },
+  {
+    "img": "https://pixabay.com/es/photos/hotel-las-habitaciones-de-hotel-casa-1749602/",
+    "category": "Casas",
+    "title": "Casa de campo",
+    "location": "Buenos Aires",
+    "description": "Manx lynx or puma but ocicat. Kitty donskoy donskoy. Kitty. Kitty havana brown and havana brown. Lion tomcat. Panther siberian. Munchkin malkin or malkin."
+  },
+  {
+    "img": "https://pixabay.com/es/photos/cama-habitaci%c3%b3n-hostel-142516/",
+    "category": "Hostales",
+    "title": "Rivera Hostel",
+    "location": "Córdoba",
+    "description": "Burmese munchkin for kitten and havana brown but persian grimalkin so tiger. American shorthair. Kitten maine coon. Manx. British shorthair cougar bengal, grimalkin."
+  },
+  {
+    "img": "https://pixabay.com/es/photos/cama-habitaci%c3%b3n-hostel-142517/",
+    "category": "Hostales",
+    "title": "Yatasto Hostal",
+    "location": "Salta",
+    "description": "Ocelot russian blue or balinese jaguar yet manx so cornish rex. Cornish rex panther jaguar birman, scottish fold. Leopard jaguar siamese."
+  },
+  {
+    "img": "https://pixabay.com/es/photos/casa-cocina-interior-isla-de-cocina-5835289/",
+    "category": "Apartamentos",
+    "title": "Patagonia Austral",
+    "location": "Ushuaia",
+    "description": "Kitten panther norwegian forest. Siberian himalayan panther norwegian forest and leopard. Devonshire rex. Ragdoll malkin but havana brown but savannah. "
+  },
+  {
+    "img": "https://pixabay.com/es/photos/departamento-alojamiento-plano-406901/",
+    "category": "Apartamentos",
+    "title": "Apart Cataratas",
+    "location": "Puerto Iguazú",
+    "description": "Jaguar siberian yet tabby. Tiger jaguar savannah so bombay but panther ocelot. Bombay panther tomcat ocicat but manx. Ocicat british shorthair. Savannah. Bengal tomcat so jaguar so lynx. "
+  },
+  {
+    "img": "https://pixabay.com/es/photos/monta%c3%b1as-lago-casa-casa-del-lago-1587287/",
+    "category": "Cabañas",
+    "title": "Cabañas Ensueño",
+    "location": "Carlos Paz",
+    "description": "Kitten panther norwegian forest. Siberian himalayan panther norwegian forest and leopard. Devonshire rex. Ragdoll malkin but havana brown but savannah. "
+  },
+  {
+    "img": "https://pixabay.com/es/photos/lago-caba%c3%b1a-embarcadero-muelle-192990/",
+    "category": "Cabañas",
+    "title": "Cabañas El Puesto Sur",
+    "location": "El Chalten",
+    "description": "Jaguar siberian yet tabby. Tiger jaguar savannah so bombay but panther ocelot. Bombay panther tomcat ocicat but manx. Ocicat british shorthair. Savannah. Bengal tomcat so jaguar so lynx. "
+  }
+]

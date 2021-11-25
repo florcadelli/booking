@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --colorPrincipal:#FBC02D;
+    --color2:#263238;
+    --color3:#607D8B;
+    --color4:#FFFBE2;
+    --size12: 12px;
+    --size24: 24px;
+}
+
+/*****************Mobile*******************/
+
+#container_dates {
+    background-color: var(--color4);
+    color: var(--color2);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100vw;
+    height: 80vh;
+}
+
+#container_dates_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.calendar {
+    background-color: var(--color3);
+    color:var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Todo lo anterior se borra cuando se pase a React*/
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 50vh;
+    width: 96vw;
+}
+
+.input_dates {
+    background-color: var(--colorPrincipal);
+    color: var(--color4);
+    border-color: var(--colorPrincipal);
+    border-radius: 8px;
+    margin-top: 5%;
+    height: 40px;
+    width: 96vw;
+    text-decoration: none;
+}
+
+/*****************Tablet*******************/
+
+@media (min-width: 768px) {
+
+    #container_dates {
+        height: 60vh;
+        padding-top: 2%;
+        padding-bottom: 0;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    #container_dates_icons {
+        height: 55vh;
+    }
+
+    #container_dates_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .calendar {
+        height: 40vh;
+        width: 94vw;
+    }
+
+    .input_dates {
+        width: 45vw;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+}
+
+/*****************Desktop*******************/
+
+@media (min-width: 1024px) {
+
+    #container_dates {
+        height: 53vh;
+        margin-top: 10px;
+    }
+
+    #h2_dates {
+        font-size: var(--size24);
+        font-weight:800;
+    }
+
+    #container_dates_icons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 45vh;
+    }
+
+    .calendar {
+        width: 58vw;
+    }
+
+    #container_dates_info {
+        background-color: white;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        height: 20vh;
+        width: 33vw;
+    } 
+
+    .input_dates, #h4_dates {
+        width: 28vw;
+    }
+
+}

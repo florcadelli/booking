@@ -1,0 +1,31 @@
+#container_header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #e6e8e6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+
+#container_header>div {
+    width: 30vw;
+}
+
+#h2_header {
+    font-size: 25px;
+    color: var(--color4);
+}
+
+#h3_header {
+    color: var(--color4);
+    font-weight: lighter;
+    font-size: var(--size14);
+}
+
+#arrow {
+    color: var(--color4);
+    text-decoration: none;
+    font-size: var(--size24);
+}

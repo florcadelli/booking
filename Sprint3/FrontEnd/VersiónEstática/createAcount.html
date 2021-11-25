@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/forms.css">
+  <script src="scripts/createAcount.js"></script>
+  <title>Crear Cuenta</title>
+</head>
+
+<body>
+  <form name="formCreateAcount">
+    <h1>Crear cuenta</h1>
+
+    <div class="information">
+      <label class="text">
+        Nombre <span class="asterisk_input"></span>
+        <input type="text" name="name" id="name">
+        <p class="error"></p>
+      </label>
+
+      <label class="text">
+        Apellido<span class="asterisk_input"></span>
+        <input type="text" name="lastName" id="lastName">
+        <p class="error"></p>
+      </label>
+    </div>
+    <label>
+      Correo electrónico<span class="asterisk_input"></span>
+      <input type="email" name="email" id="email">
+      <p class="error"></p>
+    </label>
+    <label>
+      Confirmar correo electrónico<span class="asterisk_input"></span>
+      <input type="email" name="confirmEmail" id="confirmEmail">
+      <p class="error"></p>
+    </label>
+
+    <label>
+      Contraseña<span class="asterisk_input"></span>
+      <input type="password" name="password" id="password"><i class="far fa-eye-slash" id="togglePassword"></i>
+      <p class="error"></p>
+    </label>
+
+    <label>
+      Confirmar contraseña<span class="asterisk_input"></span>
+      <input type="password" name="confirmPassword" id="confirmPassword">
+      <p class="error"></p>
+    </label>
+
+    <button>Crear cuenta</button>
+    <p class="login">¿Ya tienes cuenta?<a class="input-login" href="login.html"><span> Iniciar sesión</span></a></p>
+
+  </form>
+
+</body>
+
+</html>

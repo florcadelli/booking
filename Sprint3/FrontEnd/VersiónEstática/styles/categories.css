@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url("./recom.css");
+:root {
+    --primary: #1DBEB4;
+    --secondary: #F3F1ED;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    color: #383B58;
+} 
+
+h2{
+    margin: 10px ;
+}
+
+h4{
+    text-size-adjust: 14px;
+}
+
+/********* categories *********/
+.categories{
+    padding: 20px;
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 75%;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 25.69%;
+    padding: 0px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.cardText{
+    margin: 5% ;
+    height: 100px;
+}
+
+.card {
+    
+    border-radius: 20px;
+    padding: 0px;
+    width:347px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin:  10px;
+
+}
+
+.card p{
+    color: #545776;
+}
+
+.card:hover{    
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.50); 
+    transition: 0.4s;
+}
+
+/**** Recomendaciones ****/
+
+.recom{
+    background-color: #EBEBEE;
+    padding: 20px;
+    width: 100%;
+}
+.cardContainerRecom{
+    display: flex;
+    align-items: center;
+}
+
+.cardRecom{
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+    padding: 0px;
+    width:710px;
+    height: 279px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px 10px;
+    
+    
+}
+
+.card-bg{
+    height: 100%;   
+    width: 80%;
+    border-radius: 20px 5px 5px 20px;
+    ;
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/15/18/14/holiday-house-3322326_960_720.jpg");
+    background-size: cover;
+    
+}
+.rankingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+
+}
+.ranking{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-top: 0px;
+}
+.btnRanking{
+    background-color: #383B58;
+    color: white;
+    padding: 10px;
+    margin: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px 20px;
+}
+
+.btnVerMas{
+    background-color: #1DBEB4;
+    color: white;
+    padding: 20px 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    position: relative;
+    bottom: -20%;
+    align-self: flex-end;
+    border-radius: 5px ;
+}
+
+.fa-heart{
+    color: white;
+    font-size: 20px;
+    padding: 2%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: end;
+    position: relative;
+    top: 3%;
+    left: 80%; 
+    
+}
+.card-texto{
+    padding: 20px;
+}
+
+.icons{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+   /* border: 1px solid red;*/
+}
+span{
+    color: #1DBEB4;
+    font-size: 14px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/******* Responsive 768 tablet (iPad Mini) *******/
+@media (max-width: 768px){
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 0px;
+    width:310px;
+    margin: 10px ;
+
+}
+h2{
+    margin-left: 40px;
+}
+.ranking{
+    margin-bottom: 5px;
+}
+.cardContainerRecom{
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+.btnVerMas{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px ;
+    position: relative;
+    bottom: -15%;
+}
+
+}
+
+/********** Responsive 480px mobile **********/
+@media (max-width: 480px){
+
+    h2{
+        margin-left: 70px;
+    }
+    .cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .cardContainerRecom{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cardRecom{
+        display: flex;
+        flex-wrap: wrap;
+        
+        width: 393px;
+        height: 491px;
+    }
+    .card-bg{
+        height: 231px;
+        width: 393px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .btnVerMas{
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5px ;
+        position: relative;
+        bottom: -5%;
+    }
+    .fa-heart{
+        color: white;
+        font-size: 20px;
+        padding: 2%;
+        text-align: end;
+        position: relative;
+        top: 3%;
+        left: 90%; 
+        
+    }
+    .card-texto{
+        padding: -10px 10px;
+        
+    }
+
+}
